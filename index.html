@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#f4fbf8">
   <title>SP Student Portfolio</title>
-  <link rel="icon" href="assets/Sp-icon.svg">
+  <link rel="icon" href="Sp-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
   <div class="ambient a1"></div><div class="ambient a2"></div><div class="ambient a3"></div>
   <header class="topbar glass">
     <div class="brand" data-nav="home">
-      <img src="assets/Sp-icon.svg" alt="SP logo">
+      <img src="Sp-icon.png" alt="SP logo">
       <div><strong>SP Student Portfolio</strong><span>Special Program · Debsirin Nonthaburi School</span></div>
     </div>
     <nav><button class="navbtn active" data-nav="home">หน้าแรก</button><button class="navbtn" data-nav="about">เกี่ยวกับระบบ</button><button class="navbtn" data-nav="guide">คู่มือการใช้งาน</button></nav>
@@ -37,7 +37,7 @@
           <div class="server-status"><i></i><span>เชื่อมต่อ Google Sheets</span></div>
         </div>
         <div class="hero-visual glass">
-          <img src="assets/Sp-icon.svg" class="hero-logo" alt="SP logo">
+          <img src="Sp-icon.png" class="hero-logo" alt="SP logo">
           <div class="mini-grid">
             <div class="mini-card green"><span>01</span><b>Activities</b><small>กิจกรรม / อบรม / สัมมนา</small></div>
             <div class="mini-card yellow"><span>02</span><b>Certs-Courses</b><small>รายวิชาและหลักสูตรเพิ่มเติม</small></div>
@@ -53,12 +53,12 @@
     <section id="guide" class="page content-page"><div class="glass content-card"><h2>คู่มือการใช้งาน</h2><ol><li>สมัครสมาชิกครั้งแรกด้วยเลขบัตรประชาชนและวันเดือนปีเกิด 8 หลัก</li><li>กรอกข้อมูลส่วนตัวเพียงครั้งเดียว</li><li>เข้าสู่ระบบเพื่อดูข้อมูลเดิมหรือเพิ่มข้อมูลใหม่</li><li>เลือกประเภท Activities / Certs-Courses / Prize / Projects</li><li>เกียรติบัตรหรือหลักฐาน ให้อัปโหลดลง Google Drive เปิดเป็น “ทุกคนที่มีลิงก์” แล้วนำ URL มากรอก</li><li>หากเข้าสู่ระบบไม่ได้ ให้ติดต่อผู้ดูแลระบบ</li></ol></div></section>
 
     <section id="studentApp" class="page app-page"><div class="app-shell">
-      <aside class="sidebar glass"><div class="side-brand"><img src="assets/Sp-icon.svg"><div><b>SP Portfolio</b><small>Student</small></div></div><button class="sidebtn active" data-stab="overview">ภาพรวม</button><button class="sidebtn" data-stab="records">ข้อมูลที่เคยกรอก</button><button class="sidebtn" data-stab="add">เพิ่มข้อมูลใหม่</button><button class="sidebtn" data-stab="profile">ข้อมูลส่วนตัว</button><div class="side-spacer"></div><button class="sidebtn danger" id="studentLogout">ออกจากระบบ</button></aside>
+      <aside class="sidebar glass"><div class="side-brand"><img src="Sp-icon.png"><div><b>SP Portfolio</b><small>Student</small></div></div><button class="sidebtn active" data-stab="overview">ภาพรวม</button><button class="sidebtn" data-stab="records">ข้อมูลที่เคยกรอก</button><button class="sidebtn" data-stab="add">เพิ่มข้อมูลใหม่</button><button class="sidebtn" data-stab="profile">ข้อมูลส่วนตัว</button><div class="side-spacer"></div><button class="sidebtn danger" id="studentLogout">ออกจากระบบ</button></aside>
       <section class="workspace"><div class="workspace-head"><div><small>ยินดีต้อนรับ</small><h2 id="studentName">นักเรียน</h2></div><div class="year-chip">ปีการศึกษา <b id="studentYear">—</b></div></div><div id="studentView"></div></section>
     </div></section>
 
     <section id="adminApp" class="page app-page"><div class="app-shell">
-      <aside class="sidebar glass"><div class="side-brand"><img src="assets/Sp-icon.svg"><div><b>SP Portfolio</b><small>Admin</small></div></div><button class="asideAdmin active" data-atab="dashboard">Dashboard</button><button class="asideAdmin" data-atab="students">นักเรียน</button><button class="asideAdmin" data-atab="records">ข้อมูลผลงาน</button><button class="asideAdmin" data-atab="expired">บัญชีหมดอายุ</button><button class="asideAdmin" data-atab="settings">ปีการศึกษา</button><div class="side-spacer"></div><button class="sidebtn danger" id="adminLogout">ออกจากระบบ</button></aside>
+      <aside class="sidebar glass"><div class="side-brand"><img src="Sp-icon.png"><div><b>SP Portfolio</b><small>Admin</small></div></div><button class="asideAdmin active" data-atab="dashboard">Dashboard</button><button class="asideAdmin" data-atab="students">นักเรียน</button><button class="asideAdmin" data-atab="records">ข้อมูลผลงาน</button><button class="asideAdmin" data-atab="expired">บัญชีหมดอายุ</button><button class="asideAdmin" data-atab="settings">ปีการศึกษา</button><div class="side-spacer"></div><button class="sidebtn danger" id="adminLogout">ออกจากระบบ</button></aside>
       <section class="workspace"><div class="workspace-head"><div><small>ผู้ดูแลระบบ</small><h2>Admin Dashboard</h2></div><div class="year-chip">ปีการศึกษา <b id="adminYear">—</b></div></div><div id="adminView"></div></section>
     </div></section>
   </main>
