@@ -182,7 +182,7 @@ function updateStudentProfile(token,payload){
   const rows=getRowsWithIndex_('Students'); const item=rows.find(x=>String(x.data.id)===String(sess.id));
   if(!item) throw new Error('ไม่พบบัญชีนักเรียน');
   const s=item.data;
-  ['room','student_no','program'].forEach(k=>{ if(payload[k]!==undefined) s[k]=clean_(payload[k]); });
+  s.room=clean_(payload.room!==undefined?payload.room:s.room); s.student_no=clean_(payload.no!==undefined?payload.no:s.student_no); s.program=clean_(payload.program!==undefined?payload.program:s.program);
   s.updated_at=new Date().toISOString(); writeObjectAtRow_('Students',item.row,s);
   return {ok:true,student:studentView_(s)};
 }
