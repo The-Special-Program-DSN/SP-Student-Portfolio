@@ -1,26 +1,32 @@
 # SP Student Portfolio
 
-เว็บสำหรับนักเรียนโครงการห้องเรียนพิเศษ โรงเรียนเทพศิรินทร์ นนทบุรี  
-Frontend: **GitHub Pages** · Backend: **Google Apps Script** · Database: **Google Sheets**
+ระบบสำหรับนักเรียนโครงการห้องเรียนพิเศษ โรงเรียนเทพศิรินทร์ นนทบุรี
 
-## ตั้งค่า Google Apps Script Backend
-1. เปิด Google Sheet ฐานข้อมูล
-2. ไปที่ **Extensions → Apps Script**
-3. วางโค้ดจาก `backend/Code.gs`
-4. เปิด **Project Settings → Script Properties** และเพิ่ม:
-   - `ADMIN_USER`
-   - `ADMIN_PASSWORD`
-   - `YEAR_CHANGE_CODE`
-5. Deploy เป็น **Web app**
-   - Execute as: **Me**
-   - Who has access: **Anyone**
-6. คัดลอก URL ที่ลงท้ายด้วย `/exec`
-7. ใส่ URL ลงใน `js/config.js`
+- Frontend: GitHub Pages
+- Backend: Google Apps Script
+- Database: Google Sheets
 
-> ห้ามใส่รหัสผ่านจริงลงใน GitHub repository
+## Backend
+ใช้ไฟล์:
+- `backend/Code.gs`
+- `backend/Helpers.gs`
+
+นำทั้ง 2 ไฟล์ไปใส่ใน Apps Script โปรเจกต์เดียวกัน แล้วตั้ง Script Properties:
+- `ADMIN_USER`
+- `ADMIN_PASSWORD`
+- `YEAR_CHANGE_CODE`
+
+จากนั้น Deploy เป็น Web app:
+- Execute as: Me
+- Who has access: Anyone
+
+นำ URL ที่ลงท้ายด้วย `/exec` ไปใส่ใน `js/config.js`.
 
 ## GitHub Pages
-ไปที่ **Settings → Pages → Deploy from a branch → main / (root)**
+เปิด Settings → Pages แล้วเลือก:
+- Deploy from a branch
+- Branch: `main`
+- Folder: `/(root)`
 
-## หมายเหตุด้านข้อมูล
-ระบบมีข้อมูลส่วนบุคคล เช่น เลขบัตรประชาชนและวันเดือนปีเกิด จึงไม่ควรตั้ง Google Sheet เป็น Public
+> Repository นี้ไม่ควรเก็บรหัสผ่านหรือรหัสยืนยันไว้ใน source code
+> Google Sheet มีข้อมูลส่วนบุคคล จึงไม่ควรตั้ง Sheet เป็นสาธารณะ
